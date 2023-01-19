@@ -146,9 +146,6 @@ class DashboardController extends Controller
                 case 'visibility':
                     $filename = "Visibility - ".$store_name." ".$date."_". time() .".".$extension;
                     break;
-                case 'sales':
-                    $filename = "Sales - ".$store_name." ".$date."_". time() .".".$extension;
-                    break;
                 default:
                     $filename = "Image - ".$store_name." ".$date."_". time() .".".$extension;
                     break;

@@ -4,7 +4,7 @@
 <div class="border-radius-xl mx-2 mx-md-3 position-relative" style="background-size: cover; background-color: white">
     <main class="main-content border-radius-lg h-100">
       <div class="section min-vh-85 position-relative transform-scale-0 transform-scale-md-7">
-        <div class="container-fluid">
+        <div class="container-fluid w-100">
           <div class="row pt-5">
             <div class="col-lg-12 col-md-12 ps-md-5 mb-5 mb-md-0">
               <div class="d-flex mb-5">
@@ -31,7 +31,7 @@
                     </div>
                 </div>                          
               </form>
-                <div class="row mt-6">
+                <div class="row mt-6 w-100">
                     <div class="col-lg-12 col-md-12 mt-4 mt-lg-0">
                       <div class="card align-items-start">
                         <div class="cursor-pointer w-100 !important">
@@ -40,30 +40,22 @@
                             <h5 class="text-black mb-0">HISTORY</h5>
                             <p class="text-black text-sm">Here's our latest activity</p>
                             <div class="d-flex mt-6">
+                            <div class="table-responsive p-0">
                               <table class="table table-bordered table-striped">
                                 <thead>
                                   <tr>
-                                    <th>IMAGES</th>
-                                    <th>STORE</th>
-                                    <th>DESCRIPTION</th>
+                                    <th>HISTORY</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   @foreach($activities as $a)
                                   <tr>
-                                    <td class="image-cell">
-                                    @if(Storage::disk('owncloud')->exists($a->filename))
-                                        <img src="{{ str_replace('/storage/', '', Storage::disk('owncloud')->url($a->filename)) }}" alt="image" style="object-fit: contain; width: 200px;">
-                                    @else
-                                        <p>Image not found</p>
-                                    @endif
-                                    </td>
-                                    <td>{{ $a->store_id }}</td>
-                                    <td>{{ $a->description }}</td>
+                                    <td>{{ $a->store->store_name .'  baru saja menambahkan  '. $a->filename }}</td>
                                   </tr>
                                   @endforeach
                                 </tbody>
                               </table>
+                            </div>
                             </div>
                           </div>
                         </div>

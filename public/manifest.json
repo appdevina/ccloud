@@ -1,0 +1,17 @@
+{
+    "name": "Complete Cloud by Business Development Team",
+    "short_name": "CCloud",
+    "start_url": "http://192.168.0.154/ccloud/public/",
+    "background_color": "#ffffff",
+    "description": "",
+    "display": "fullscreen",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "{{ asset('admin/assets/img/cloud.png') }}",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

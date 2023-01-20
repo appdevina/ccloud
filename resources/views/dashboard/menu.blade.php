@@ -12,12 +12,30 @@
                   <h3 class="text-uppercase mb-0 ms-1 text-black">Pick a category to backup your file</h3>
                 </div>
               </div>
+              <form action="/sales" method="GET">
+              <div class="row mt-4">
+                <div class="col-lg-12 col-md-12 mt-4 mt-lg-0">
+                  <div class="card card-background move-on-hover align-items-start">
+                    <div class="cursor-pointer w-100 !important">
+                      <div class="full-background" style="background-color: #090089;"></div>
+                      <div class="card-body">
+                        <h5 class="text-white mb-0">Sales</h5>
+                        <p class="text-white text-sm">Upload your Sales documentation</p>
+                        <div class="d-flex mt-5">
+                            <button type="submit" class="btn btn-outline-white btn-lg w-100">UPLOAD SALES</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </form>
               <form action="/activity" method="GET">
                 <div class="row mt-4">
                     <div class="col-lg-12 col-md-12 mt-4 mt-lg-0">
                     <div class="card card-background move-on-hover align-items-start">
                         <div class="cursor-pointer w-100 !important">
-                        <div class="full-background" style="background-color: #090089"></div>
+                        <div class="full-background" style="background-color: #22559C"></div>
                         <div class="card-body">
                             <h5 class="text-white mb-0">Activity</h5>
                             <p class="text-white text-sm">Upload your Activity documentation</p>
@@ -29,24 +47,6 @@
                     </div>
                     </div>
                 </div>
-              </form>
-              <form action="/stockopname" method="GET">
-              <div class="row mt-4">
-                <div class="col-lg-12 col-md-12 mt-4 mt-lg-0">
-                  <div class="card card-background move-on-hover align-items-start">
-                    <div class="cursor-pointer w-100 !important">
-                      <div class="full-background" style="background-color: #22559C;"></div>
-                      <div class="card-body">
-                        <h5 class="text-white mb-0">Stock Opname</h5>
-                        <p class="text-white text-sm">Upload your Stock Opname documentation</p>
-                        <div class="d-flex mt-5">
-                            <button type="submit" class="btn btn-outline-white btn-lg w-100">UPLOAD STOCK OPNAME</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               </form>
               <form action="/visibility" method="GET">
               <div class="row mt-4">
@@ -66,17 +66,17 @@
                 </div>
               </div>
               </form>
-              <form action="/sales" method="GET">
+              <form action="/stockopname" method="GET">
               <div class="row mt-4">
                 <div class="col-lg-12 col-md-12 mt-4 mt-lg-0">
                   <div class="card card-background move-on-hover align-items-start">
                     <div class="cursor-pointer w-100 !important">
                       <div class="full-background" style="background-color: #64D7D6;"></div>
                       <div class="card-body">
-                        <h5 class="text-white mb-0">Sales</h5>
-                        <p class="text-white text-sm">Upload your Sales documentation</p>
+                        <h5 class="text-white mb-0">Stock Opname</h5>
+                        <p class="text-white text-sm">Upload your Stock Opname documentation</p>
                         <div class="d-flex mt-5">
-                            <button type="submit" class="btn btn-outline-white btn-lg w-100">UPLOAD SALES</button>
+                            <button type="submit" class="btn btn-outline-white btn-lg w-100">UPLOAD STOCK OPNAME</button>
                         </div>
                       </div>
                     </div>

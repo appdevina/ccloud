@@ -169,6 +169,7 @@ class DashboardController extends Controller
             $this->validate($request, [
                 'store_id' => 'required',
                 $file_field => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+                'cust_name' => 'required',
                 'unit_sold' => 'required',
                 'imei' => 'required',
                 'alamat' => 'required',
@@ -191,6 +192,7 @@ class DashboardController extends Controller
             return [
                 'store_id' => $request->store_id,
                 'filename' => $filename,
+                'cust_name' => $request->cust_name,
                 'unit_sold' => $request->unit_sold,
                 'imei' => $request->imei,
                 'alamat' => $request->alamat,

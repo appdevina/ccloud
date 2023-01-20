@@ -28,6 +28,10 @@
                         </select>
                         <br>
                         <div class="input-group input-group-static mb-4">
+                            <label>Nama Customer</label>
+                            <input type="text" class="form-control" name="cust_name" id="cust_name" required>
+                        </div>
+                        <div class="input-group input-group-static mb-4">
                             <label>Unit Terjual</label>
                             <input type="text" class="form-control" name="unit_sold" id="unit_sold" required>
                         </div>

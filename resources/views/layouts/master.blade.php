@@ -46,6 +46,7 @@
     @include('layouts.includes._navbar')
     <!-- End Navbar -->
     @yield('content')
+    @include('layouts.includes._footer')
   </main>
   <!--   Core JS Files   -->
   <script src="{{asset('admin/assets/js/core/popper.min.js')}}"></script>

@@ -39,16 +39,11 @@
                           <div class="card-body">
                             <h5 class="text-black mb-0">HISTORY</h5>
                             <p class="text-black text-sm">Here's our latest activity</p>
-                            <div class="d-flex mt-6">
-                            <div class="table-responsive p-0">
+                            <div class="d-flex mt-5">
+                            <div class="table-responsive p-0 w-100">
                               <table class="table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>HISTORY</th>
-                                  </tr>
-                                </thead>
                                 <tbody>
-                                  @foreach($activities as $a)
+                                  @foreach($allData as $a)
                                   <tr>
                                     <td>{{ $a->store->store_name .'  baru saja menambahkan  '. $a->filename }}</td>
                                   </tr>

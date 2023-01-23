@@ -21,12 +21,17 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $activities = Activity::latest()
-        ->take(10)
-        ->get();
+        $activities = Activity::latest()->take(10)->get();
+
+        $sales = Sales::latest()->take(10)->get();
+        $stocks = StockOpname::latest()->take(10)->get();
+        $visibilities = Visibility::latest()->take(10)->get();;
+
+        $allData = $activities->concat($sales)->concat($stocks)->concat($visibilities);
+        $allData = $allData->sortByDesc('created_at');
 
         return view('dashboard.index')->with([
-            'activities' => $activities,
+            'allData' => $allData,
         ]);
     }
 

@@ -17,7 +17,7 @@ class CreateSalesTable extends Migration
             $table->id();
             $table->foreignId('store_id');
             $table->string('filename');
-            $table->integer('unit_sold');
+            $table->string('unit_sold');
             $table->string('imei');
             $table->string('alamat');
             $table->timestamps();

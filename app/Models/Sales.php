@@ -11,7 +11,7 @@ class Sales extends Model
 
     protected $guarded = ['id'];
 
-    protected $fillable = ['store_id', 'filename', 'cust_name', 'unit_sold', 'imei', 'alamat'];
+    protected $fillable = ['store_id', 'filename', 'cust_name', 'unit_sold', 'type', 'imei', 'alamat'];
 
     protected $hidden = [
         'created_at',

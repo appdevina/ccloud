@@ -42,7 +42,7 @@ class DashboardController extends Controller
 
     public function activityCreate()
     {
-        $stores = Store::all();
+        $stores = Store::orderBy('store_name')->get();
 
         return view('activity.create')->with([
             'stores' => $stores,
@@ -62,7 +62,7 @@ class DashboardController extends Controller
 
     public function stockOpnameCreate()
     {
-        $stores = Store::all();
+        $stores = Store::orderBy('store_name')->get();
 
         return view('stockopname.create')->with([
             'stores' => $stores,
@@ -82,7 +82,7 @@ class DashboardController extends Controller
 
     public function visibilityCreate()
     {
-        $stores = Store::all();
+        $stores = Store::orderBy('store_name')->get();
 
         return view('visibility.create')->with([
             'stores' => $stores,
@@ -102,7 +102,7 @@ class DashboardController extends Controller
 
     public function salesCreate()
     {
-        $stores = Store::all();
+        $stores = Store::orderBy('store_name')->get();
 
         return view('sales.create')->with([
             'stores' => $stores,
@@ -176,6 +176,7 @@ class DashboardController extends Controller
                 $file_field => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
                 'cust_name' => 'required',
                 'unit_sold' => 'required',
+                'type' => 'required',
                 'imei' => 'required',
                 'alamat' => 'required',
             ]);
@@ -199,6 +200,7 @@ class DashboardController extends Controller
                 'filename' => $filename,
                 'cust_name' => $request->cust_name,
                 'unit_sold' => $request->unit_sold,
+                'type' => $request->type,
                 'imei' => $request->imei,
                 'alamat' => $request->alamat,
             ];

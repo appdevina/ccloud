@@ -32,16 +32,20 @@
                             <input type="text" class="form-control" name="cust_name" id="cust_name" required>
                         </div>
                         <div class="input-group input-group-static mb-4">
+                            <label>Alamat</label>
+                            <input type="text" class="form-control" name="alamat" id="alamat" required>
+                        </div>
+                        <div class="input-group input-group-static mb-4">
                             <label>Unit Terjual</label>
                             <input type="text" class="form-control" name="unit_sold" id="unit_sold" required>
                         </div>
                         <div class="input-group input-group-static mb-4">
-                            <label>IMEI</label>
-                            <input type="text" class="form-control" name="imei" id="imei" required>
+                            <label>Type HP</label>
+                            <input type="text" class="form-control" name="type" id="type" required>
                         </div>
                         <div class="input-group input-group-static mb-4">
-                            <label>Alamat</label>
-                            <input type="text" class="form-control" name="alamat" id="alamat" required>
+                            <label>IMEI</label>
+                            <input type="text" class="form-control" name="imei" id="imei" required>
                         </div>
                         <div class="form-group">
                             <label for="inputSales" class="form-label">Sales</label><br>

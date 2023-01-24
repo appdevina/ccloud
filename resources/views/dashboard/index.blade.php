@@ -45,7 +45,7 @@
                                 <tbody>
                                   @foreach($allData as $a)
                                   <tr>
-                                    <td>{{ $a->store->store_name .'  baru saja menambahkan  '. $a->filename }}</td>
+                                    <td>{{ $a->store->store_name .'  baru saja menambahkan  '. $a->filename . ' pada ' . date_format($a->created_at, "d F Y G:i") }}</td>
                                   </tr>
                                   @endforeach
                                 </tbody>

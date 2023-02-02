@@ -54,8 +54,11 @@ return [
         ],
 
         'owncloud' => [
-            'driver' => 'local',
-            'root' => 'C:\Users\ASUS-A4\ownCloud - devina@30.30.30.247\xDEV'
+            'driver'   => 'owncloud',
+            'baseUri'  => 'http://csa1backup.sytes.net:3990/owncloud/remote.php/dav/files/devina/xDEV/',
+            'shareApi'  => '/ocs/v1.php/apps/files_sharing/api/v1/shares',
+            'userName' => 'devina',
+            'password' => '123'
         ],
 
     ],
